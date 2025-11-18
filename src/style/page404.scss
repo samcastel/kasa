@@ -1,0 +1,18 @@
+@use "./settings.scss" as *;
+
+.e404-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 129px;
+    flex: 1;
+
+    h1, p{
+        color: $primary;
+    }
+
+    h1{
+        font-size: 288px;
+    }
+}

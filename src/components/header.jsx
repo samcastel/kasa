@@ -1,13 +1,13 @@
 
 import "../style/header.scss"
-
+import { Link } from "react-router-dom"
 const Header = () => {
     return(
         <header>
             <img src="/assets/LOGO-2.png" alt="logo kaza" />
             <nav>
-                <a href="">Accueil</a>
-                <a href="">A Propos</a>
+                <Link to="/">Accueil</Link>
+                <Link to="/about">A Propos</Link>
             </nav>
         </header>
     )

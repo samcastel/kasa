@@ -1,6 +1,35 @@
+@use "./settings.scss" as *;
+
 .drop{
-    width: 1023px;
-    height: 52px;
-    background-color: red;
+   
+    background-color: $primary;
     border-radius: 5px;
+
+    &_header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &_title{
+            color: white;
+        }
+    }
+
+    &_description{
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+
+        &.open{
+            height: auto;
+        }
+     }
+
+}
+
+.drop-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
