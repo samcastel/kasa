@@ -16,11 +16,20 @@ export default function DropDown({title, description}){
 
                     <div className="drop_header">
                         <div className="drop_header_title">{title}</div>
-                        <div className="drop_header_arrow"><img src="/assets/arrow_back.svg" alt="fleche" /></div>
+                        <div className="drop_header_arrow" >
+                            <img 
+                                src={"/assets/arrow.png"} 
+                                alt="fleche" 
+                                style={afficheDescr ? {} : {transform: "rotate(180deg)"}}
+                            />
+                        </div>
                     </div>
                     
-                    <p className={afficheDescr ? "open drop_description" : "drop_description"}>{description}</p>
+                    <div className={afficheDescr ? "open drop_description_container" : "drop_description_container"} id="drop-description">
+                        <div className="drop_description">{description}</div>
+                    </div>
                 </div>
+                
             
         </>
         

@@ -1,0 +1,26 @@
+@use "./settings.scss" as *;
+
+.logements{
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        padding: 56px 50px 43px 50px;
+        box-sizing: border-box;
+        background-color: #F6F6F6;
+        margin-top: 43px;
+        margin-bottom: 50px;
+        border-radius: 16px;
+    }
+    &__card{
+        background-color: $primary;
+        height: 340px;
+        flex: 1;
+        min-width: 340px; 
+        border-radius: 16px;
+
+        &__title{
+            color: white;
+        }
+    }
+}

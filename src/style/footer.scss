@@ -1,4 +1,4 @@
-
+@use "mixin.scss" as *;
 footer{
     display: flex;
     flex-direction: column;
@@ -9,5 +9,15 @@ footer{
 
     p{
         color: white;
+        font-weight: 500;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    @include mobile{
+        p{
+            font-size: 12px;
+            max-width: 134px;
+        }
     }
 }

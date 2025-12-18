@@ -1,3 +1,5 @@
+@use "mixin.scss" as *;
+
 header{
     display: flex;
     flex-direction: row;
@@ -12,6 +14,8 @@ header{
 
         a{
             color: black;
+            font-size: 24px;
+            font-weight: 500;
         }
     }
 
@@ -19,6 +23,22 @@ header{
         width: 210px;
     }
 
+    @include mobile{
+        margin: 20px 20px 27px 20px;
 
+        nav{
+            gap: 26px;
+
+            a{
+                font-size: 12px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+
+        img{
+            width: 145px;
+        }
+    }
 
 }

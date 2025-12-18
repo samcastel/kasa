@@ -7,7 +7,7 @@ const Header = () => {
             <img src="/assets/LOGO-2.png" alt="logo kaza" />
             <nav>
                 <Link to="/">Accueil</Link>
-                <Link to="/about">A Propos</Link>
+                <Link to="/about">À Propos</Link>
             </nav>
         </header>
     )

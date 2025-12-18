@@ -8,6 +8,7 @@ import DropDown from './components/drop-down'
 import Home from './pages/Home'
 import About from './pages/About'
 import Page404 from './pages/Page404'
+import FicheLogement from './pages/ficheLogement'
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
+        <Route path='/logement/:id' element={<FicheLogement />} />
         <Route path='*' element={<Page404 />} />
       </Routes>
     </BrowserRouter>

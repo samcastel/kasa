@@ -1,9 +1,10 @@
 @use "./settings.scss" as *;
 
 .drop{
-   
+    
     background-color: $primary;
     border-radius: 5px;
+    
 
     &_header{
         display: flex;
@@ -14,22 +15,30 @@
         &_title{
             color: white;
         }
+
+        img{
+            transition: transform 0.2s ease-out;
+        }
     }
 
     &_description{
-        height: 0;
         overflow: hidden;
         margin: 0;
 
-        &.open{
-            height: auto;
+        &_container{
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows 0.2s ease-out;
+
+            &.open{
+                grid-template-rows: 1fr; 
+            } 
         }
+        
      }
-
 }
 
-.drop-container{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+#drop-description{
+            background-color: yellow;
+        }
+

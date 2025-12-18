@@ -1,0 +1,16 @@
+.slider{
+    position: relative;
+
+    button{
+        position: absolute;
+    }
+
+    &__prev{
+        transform: rotate(-90deg);
+    }
+
+    &__next{
+        transform: rotate(90deg);
+        right: 0
+    }
+}

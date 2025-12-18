@@ -2,7 +2,7 @@ import DropDown from "../components/drop-down"
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Banner from '../components/banner'
-
+import "../style/about.scss"
 
 const data = [
     {
@@ -29,7 +29,7 @@ const About = () => {
       <div className='page-content'>
         <Header />
         <Banner />
-        <div className="drop-container">
+        <div className="about-container">
           {data.map((element) => <DropDown key={element.title} title={element.title} description={element.description}/> )}
         </div>
       </div>
