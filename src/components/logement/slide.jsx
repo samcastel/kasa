@@ -24,11 +24,16 @@ export default function Slide({pictures}){
                 <img src="/assets/arrow.png" alt="fleche" />
             </button>
 
+            <p className="slider__num">{index+1}/{pictures.length}</p>
+
             <button className="slider__next" onClick={nextClick}>
                 <img src="/assets/arrow.png" alt="fleche" />
             </button>
+            
+            
 
             <img src={pictures[index]} alt="" />
+            
         </div>
     );
 }

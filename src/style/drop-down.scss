@@ -33,12 +33,15 @@
             &.open{
                 grid-template-rows: 1fr; 
             } 
+            li{
+                list-style: none;
+            }
         }
         
      }
 }
 
 #drop-description{
-            background-color: yellow;
+            background-color: #F6F6F6;
         }
 

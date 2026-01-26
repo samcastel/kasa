@@ -1,0 +1,98 @@
+@use "./settings.scss" as *;
+
+.star-active{
+    width: auto;
+}
+.fiche-logement{
+    margin-bottom: 50px;
+    
+    &__title{
+        color: $primary;
+        font-weight: 500;
+        font-size: 36px;
+        letter-spacing: 0;
+        font-family: Montserrat;
+
+    }
+
+    &__location{
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0%;
+        font-family: Montserrat;
+    }
+
+    &__tag{
+        display: inline-block;
+        border: 1px solid $primary;
+        margin-right: 10px;
+        background-color: $primary;
+        border-radius: 16px;
+        padding: 16px 8px;
+        color: white;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 700;
+        min-width: 107px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 21px;
+    }
+
+    &__host{
+        display: flex;
+        gap: 10px;
+        width: max-content;
+        margin-top: 24px;
+
+        &__name{
+            color: $primary;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0%;
+        }
+
+        &__picture{
+            border-radius: 50%;
+            max-width: 64px;
+            max-height: 64px;
+        }
+    }
+    &__rating{
+        display: flex;
+        flex-direction: row;
+        gap: 18px;
+    }
+    &__additional-info{
+        display: flex;
+        flex-direction: row;
+        gap: 76px;
+        .drop{
+            flex: 1;
+            height: max-content;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.infoGeneral{
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -1,7 +1,16 @@
 .slider{
     position: relative;
+    overflow: hidden;
+    max-height: 415px;
 
     button{
+        position: absolute;
+        background: transparent;
+        top: calc(50% - 22px);
+        border: none;
+        cursor: pointer;
+    }
+    .slider__prev{
         position: absolute;
     }
 
@@ -12,5 +21,16 @@
     &__next{
         transform: rotate(90deg);
         right: 0
+    }
+
+    &__num{
+        position: absolute;
+        bottom: 25px;
+        right: 50%;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0%;
+        font-family: Montserrat;
     }
 }
