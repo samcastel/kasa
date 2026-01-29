@@ -28,7 +28,7 @@ const About = () => {
     <main>
       <div className='page-content'>
         <Header />
-        <Banner />
+        <Banner img={"/assets/img-about.png"} opacity={0.3}/>
         <div className="about-container">
           {data.map((element) => <DropDown key={element.title} title={element.title} description={element.description}/> )}
         </div>

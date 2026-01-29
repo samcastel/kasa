@@ -5,7 +5,9 @@
 }
 .fiche-logement{
     margin-bottom: 50px;
-    
+    p{
+        margin: 0;
+    }
     &__title{
         color: $primary;
         font-weight: 500;
@@ -27,8 +29,8 @@
         border: 1px solid $primary;
         margin-right: 10px;
         background-color: $primary;
-        border-radius: 16px;
-        padding: 16px 8px;
+        border-radius: 10px;
+        padding: 5px 10px;
         color: white;
         font-size: 14px;
         font-family: Montserrat;

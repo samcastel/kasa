@@ -1,9 +1,8 @@
 @use "./settings.scss" as *;
 
 .drop{
-    
     background-color: $primary;
-    border-radius: 5px;
+    border-radius: 10px;
     
 
     &_header{
@@ -11,24 +10,33 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
 
         &_title{
             color: white;
+            margin-left: 10px;
+            font-weight: 700;
+            font-size: 24px;
         }
 
         img{
             transition: transform 0.2s ease-out;
+            margin-top: 8px;
+            margin-right: 10px;
         }
     }
 
     &_description{
         overflow: hidden;
         margin: 0;
+        font-size: 18px;
+        padding: 25px 28px 20px 20px;
 
         &_container{
             display: grid;
             grid-template-rows: 0fr;
             transition: grid-template-rows 0.2s ease-out;
+            overflow: hidden;
 
             &.open{
                 grid-template-rows: 1fr; 

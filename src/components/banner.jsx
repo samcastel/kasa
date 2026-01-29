@@ -1,12 +1,12 @@
 
 import "../style/banner.scss"
 
-function Banner(){
+function Banner({titre, img, opacity}){
     return(
         <section>
-            <img className="banner-img" src="/assets/IMG.png" alt="photo-falaise" />
-            <div className="banner-mask">
-                Chez vous, partout et ailleurs
+            <img className="banner-img" src={img} alt="photo-falaise" />
+            <div className="banner-mask" style={{opacity}}>
+                {titre}
             </div>
         </section>
         

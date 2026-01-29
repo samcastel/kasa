@@ -18,7 +18,7 @@ export default function Home(){
     <main>
         <div>
             <Header />
-            <Banner />
+            <Banner titre={"Chez vous, partout et ailleurs"} img={"/assets/IMG.png"} opacity={0.6}/>
         </div>
         <section className="logements__container">
             {logements.map((logement) => (
