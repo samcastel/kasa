@@ -21,13 +21,13 @@ export default function Slide({pictures}){
     return(
         <div className="slider">
             <button className="slider__prev" onClick={previousClick}>
-                <img src="/assets/arrow.png" alt="fleche" />
+                <img src="/assets/arrow.svg" alt="fleche" />
             </button>
 
             <p className="slider__num">{index+1}/{pictures.length}</p>
 
             <button className="slider__next" onClick={nextClick}>
-                <img src="/assets/arrow.png" alt="fleche" />
+                <img src="/assets/arrow.svg" alt="fleche" />
             </button>
             
             

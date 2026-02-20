@@ -1,5 +1,5 @@
 @use "./settings.scss" as *;
-
+@use "mixin.scss" as *;
 .drop{
     background-color: $primary;
     border-radius: 10px;
@@ -30,7 +30,6 @@
         overflow: hidden;
         margin: 0;
         font-size: 18px;
-        padding: 25px 28px 20px 20px;
 
         &_container{
             display: grid;
@@ -40,6 +39,9 @@
 
             &.open{
                 grid-template-rows: 1fr; 
+                .drop_description{
+                    padding: 25px 28px 20px 20px;
+                }
             } 
             li{
                 list-style: none;
@@ -53,3 +55,12 @@
             background-color: #F6F6F6;
         }
 
+@include mobile{
+        .drop{
+            &_header{
+                &_title{
+                    font-size: 13px;
+                }
+            }
+        }
+    }

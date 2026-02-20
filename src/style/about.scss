@@ -1,8 +1,16 @@
+@use "mixin.scss" as *;
+
 .about-container{
     display: flex;
     flex-direction: column;
     gap: 30px;
     width: 75%;
     margin: 38px auto;
+
+    @include mobile{
+        width: calc(100% - 40px);
+    }
 }
+
+
 

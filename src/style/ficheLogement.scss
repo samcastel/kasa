@@ -5,6 +5,15 @@
 }
 .fiche-logement{
     margin-bottom: 50px;
+    
+    &__infoGeneral{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    
     p{
         margin: 0;
     }
@@ -14,7 +23,7 @@
         font-size: 36px;
         letter-spacing: 0;
         font-family: Montserrat;
-
+        line-height: 143%;
     }
 
     &__location{
@@ -22,7 +31,8 @@
         font-weight: 500;
         letter-spacing: 0%;
         font-family: Montserrat;
-    }
+        margin-bottom: 20px !important;
+        }
 
     &__tag{
         display: inline-block;
@@ -51,7 +61,7 @@
         display: flex;
         gap: 10px;
         width: max-content;
-        margin-top: 24px;
+        align-items: center;
 
         &__name{
             color: $primary;

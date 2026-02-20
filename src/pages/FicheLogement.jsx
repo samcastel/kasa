@@ -41,9 +41,9 @@ export default function FicheLogement(){
             <Header />
             <section className='fiche-logement'>
                 <Slide pictures={logement.pictures} />
-                <div className='infoGeneral'>
+                <div className='fiche-logement__infoGeneral'>
 
-                    <div className='infoDescription'>
+                    <div className='fiche-logement__infoDescription'>
                         <p className='fiche-logement__title'>{logement.title}</p>
                         <p className='fiche-logement__location'>{logement.location}</p>
                         {logement.tags.map(tag => <div className='fiche-logement__tag'>{tag}</div>)}
