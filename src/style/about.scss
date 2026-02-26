@@ -9,6 +9,8 @@
 
     @include mobile{
         width: calc(100% - 40px);
+        gap: 20px;
+        margin: 19px auto;
     }
 }
 

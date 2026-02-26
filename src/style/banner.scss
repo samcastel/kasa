@@ -8,12 +8,20 @@ section{
     margin-right: auto;
 
     .banner-mask{
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 223px;
+        border-radius: 16px;
+        top: 0;
+    }
+
+    .banner-text{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         position: absolute;
-        background-color: black;
         width: 100%;
         height: 223px;
         border-radius: 16px;
@@ -21,7 +29,6 @@ section{
         color: white;
         font-weight: 700;
         font-size: 48px;
-
     }
     
 
@@ -34,5 +41,16 @@ section{
     }
     @include mobile{
         max-width: calc(100% - 40px);
+        .banner-text{
+            font-size: 24px;
+            height: 111px;
+            justify-content: flex-start;
+            padding-left: 16px;
+            box-sizing: border-box;
+            white-space: pre;
+        }
+        .banner-img, .banner-mask{
+            height: 111px;
+        }
     }
 }

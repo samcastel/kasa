@@ -61,6 +61,17 @@
                 &_title{
                     font-size: 13px;
                 }
+                img{
+                    width: 24px;
+                }
+            }
+            &_description{
+                font-size: 12px;
+                &_container.open{
+                    .drop_description{
+                        padding: 13px 20px 19px 20px;
+                    }
+                }  
             }
         }
     }

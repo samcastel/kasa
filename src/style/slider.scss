@@ -1,3 +1,5 @@
+@use "mixin.scss" as *;
+
 .slider{
     position: relative;
     overflow: hidden;
@@ -35,5 +37,12 @@
         font-weight: 500;
         letter-spacing: 0%;
         font-family: Montserrat;
+    }
+
+    @include mobile{
+        height: 255px;
+        &__num{
+            display: none;
+        }
     }
 }

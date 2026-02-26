@@ -1,5 +1,5 @@
 @use "./settings.scss" as *;
-
+@use "mixin.scss" as *;
 .logements{
     &__container{
         display: flex;
@@ -30,6 +30,7 @@
             margin: 0;
             font-weight: 700;
             font-size: 18px;
+            width: calc(100% - 40px);
         }
 
         img{
@@ -40,4 +41,20 @@
             border-radius: 16px;
         }
     }
+     
 }
+
+@include mobile{
+        .logements{
+            &__container{
+                padding: 0;
+                background-color: transparent;
+                gap: 20px;
+                margin-top: 22px;
+                margin-bottom: 27px;
+            }
+            &__card{
+                height: 255px;
+            }
+        }
+    }

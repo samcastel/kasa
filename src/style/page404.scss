@@ -1,4 +1,5 @@
 @use "./settings.scss" as *;
+@use "mixin.scss" as *;
 
 .e404-content{
     display: flex;
@@ -15,6 +16,7 @@
     h1{
         font-size: 288px;
         margin-top: 60px;
+        font-weight: 700;
     }
 
     p{
@@ -27,5 +29,19 @@
         margin-bottom: 139px;
         font-weight: 500;
         font-size: 18px;
+        color: black;
+    }
+
+    @include mobile{
+        h1{
+            font-size: 96px;
+        }
+        p{
+            font-size: 18px;
+            text-align: center;
+        }
+        #retour-accueil{
+            font-size: 14px;
+        }
     }
 }
