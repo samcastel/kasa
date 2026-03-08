@@ -53,7 +53,7 @@ export default function FicheLogement(){
                     <div className='fiche-logement__right'>
                         <div className='fiche-logement__host'>
                             <p className='fiche-logement__host__name'>{logement.host.name}</p>
-                            <img className='fiche-logement__host__picture' src={logement.host.picture ? logement.host.picture : "/assets/Host.png"} alt="" />
+                            <img className='fiche-logement__host__picture' src={logement.host.picture ? logement.host.picture : "/assets/Host.png"} alt="photo interieur logement" />
                         </div>
                         <Rating rating={Number(logement.rating)}/>
                     </div>
