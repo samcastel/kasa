@@ -32,7 +32,7 @@ export default function Slide({pictures}){
             
             
 
-            <img src={pictures[index]} alt="" />
+            <img src={pictures[index]} alt={`image ${index + 1}`} />
             
         </div>
     );

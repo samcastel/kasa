@@ -16,9 +16,7 @@ export default function FicheLogement(){
     useEffect(() => {
             fetchData().then((data) => {
                 setLogement(data.find((element) => element.id === params.id))
-                // 1- logement trouvé
-                // 2- useEffect pas encore déclenché (se déclenche une fois le composant monté)
-                // 3- Logement pas trouvé (page 404)
+                
             })
         }, [])
 
@@ -46,7 +44,10 @@ export default function FicheLogement(){
                     <div className='fiche-logement__infoDescription'>
                         <p className='fiche-logement__title'>{logement.title}</p>
                         <p className='fiche-logement__location'>{logement.location}</p>
-                        {logement.tags.map(tag => <div className='fiche-logement__tag'>{tag}</div>)}
+                        <div className='fiche-logement__tag__container'>
+                            {logement.tags.map(tag => <div className='fiche-logement__tag'>{tag}</div>)}
+                        </div>
+                        
                     </div>
                     
                     <div className='fiche-logement__right'>
